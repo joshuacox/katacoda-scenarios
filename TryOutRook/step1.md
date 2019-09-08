@@ -10,4 +10,4 @@ First let's launch the cluster
 
 ## Grab the script
 
-`curl -s https://gist.githubusercontent.com/joshuacox/30c0b0871622b233195a8bb5229ee5e4/raw/616c608f16815b5d8d483196af3cae1ae10fede1/gistfile1.txt -o bootstrap`{{execute}}
+`curl -s https://gist.githubusercontent.com/joshuacox/30c0b0871622b233195a8bb5229ee5e4/raw/fc8c9f7eebc863012c4d93960e1d5a146929704c/gistfile1.txt -o bootstrap`{{execute}}
