@@ -5,15 +5,15 @@ Now let's run the [TryOutRook script](https://gist.github.com/joshuacox/30c0b087
 You should have that script as a file named `bootstrap` in the editor
 pane to the right -->
 
-This ends on the wait section for mysql-pvc-claim `Now we will wait on mysql-pvc-claim to be bound`
-
-`bash bootstrap`{{execute}}
-
 # Other branches
 
 You can use another branch of rook from  the repo by exporting
 `ROOK_BRANCH` beforehand i.e.
 
-```
-EXPORT ROOK_BRANCH=master ; bash bootstrap
-```
+`EXPORT ROOK_BRANCH=master`{{execute}}
+
+### Run the script
+
+This ends on the wait section for mysql-pvc-claim `Now we will wait on mysql-pvc-claim to be bound`
+
+`bash bootstrap`{{execute}}
