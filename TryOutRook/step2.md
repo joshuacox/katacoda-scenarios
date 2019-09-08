@@ -1,6 +1,19 @@
-## Try Out Rook
+## Health Check
 
-Now let's look at the [TryOutRook script](https://gist.github.com/joshuacox/30c0b0871622b233195a8bb5229ee5e4).
+Check on the cluster
 
-You should have that script as a file named `bootstrap` in the editor
-pane to the right. -->
+`kubectl cluster-info`{{execute}}
+
+### Get All Nodes
+
+`kubectl get nodes`{{execute}}
+
+### Get All Pods
+
+`kubectl get pods --all-namespaces`{{execute}}
+
+## Get PVCs
+
+Now let's look at the pvc's.
+
+`kubectl get pvc`{{execute}}

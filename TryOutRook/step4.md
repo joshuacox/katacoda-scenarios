@@ -1,5 +1,5 @@
-## Get PVCs
+## Finish Up
 
-Now let's look at the pvc's.
+Check on the wordpress pods
 
-`kubectl get pvc`{{execute}}
+`kubectl get pods`{{execute}}
