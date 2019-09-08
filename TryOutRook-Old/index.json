@@ -1,8 +1,8 @@
 {
-  "title": "Try Out Rook 2",
-  "description": "Try Out Rook 2",
+  "title": "Try Out Rook - Old",
+  "description": "Try Out Rook - Old",
   "difficulty": "Beginner",
-  "time": "5 minutes",
+  "time": "45 minutes",
   "details": {
     "steps": [
       {
@@ -23,17 +23,10 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
-      "courseData": "background.sh",
-      "code": "foreground.sh"
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
-      ]
     }
   },
   "environment": {

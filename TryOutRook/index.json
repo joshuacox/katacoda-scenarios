@@ -2,7 +2,7 @@
   "title": "Try Out Rook",
   "description": "Try Out Rook",
   "difficulty": "Beginner",
-  "time": "45 minutes",
+  "time": "5 minutes",
   "details": {
     "steps": [
       {
@@ -23,10 +23,17 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "background.sh",
+      "code": "foreground.sh"
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
     }
   },
   "environment": {
