@@ -1,5 +1,7 @@
-## Get PVCs
+### Run the script
 
-Now let's look at the pvc's
+Time to run the script.
 
-`kubectl get pvc`{{execute}}
+This ends on the wait section for mysql-pvc-claim `Now we will wait on mysql-pvc-claim to be bound`.
+
+`bash bootstrap`{{execute}}
