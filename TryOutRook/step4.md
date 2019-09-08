@@ -1,4 +1,4 @@
-## Finish Up
+## Check on Wordpres  and MySQL
 
 Check on the wordpress pods
 
