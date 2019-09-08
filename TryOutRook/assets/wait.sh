@@ -21,7 +21,7 @@ wait_on_pod () {
 
 show_progress()
 {
-  echo -n "Starting"
+  echo "Starting"
   local -r pid="${1}"
   local -r delay='0.75'
   local spinstr='\|/-'
@@ -29,7 +29,7 @@ show_progress()
   echo "K8S Starting"
   wait_on_pod /tmp/launch.sh
   echo "K8S Started"
-  echo -n "Cloning Rook"
+  echo "Cloning Rook"
   wait_on_pod /tmp/rk_clone
   echo "Rook Cloned"
   echo "Step 1"
@@ -47,9 +47,13 @@ show_progress()
   wait_on_pod /tmp/rk_step1
   echo "Rook Installed"
   echo "Step 1 finished"
-  echo -n "Start Step 2"
+  echo "Start Step 2"
+  echo "Start MySQL"
   wait_on_pod /tmp/pvc_claim-mysql-pvc-claim
+  echo "MySQL started"
+  echo "Start WP"
   wait_on_pod /tmp/pvc_claim-wp-pv-claim
+  echo "WP started"
   wait_on_pod /tmp/rk_step2
   echo "Step 2 finished"
 }
