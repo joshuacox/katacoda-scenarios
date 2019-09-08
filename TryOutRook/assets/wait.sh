@@ -57,7 +57,8 @@ show_progress()
   printf "    \b\b\b\b"
   echo ""
   echo "Cloned"
-  echo "Start Step 1"
+  echo "Step 1"
+  echo "Let's get rook installed and running"
   wait_on_pod /tmp/rook-cephrook-ceph-operator
   wait_on_pod /tmp/rook-cephrook-ceph-agent
   wait_on_pod /tmp/rook-cephrook-ceph-mds
@@ -84,8 +85,11 @@ show_progress()
   done
   printf "    \b\b\b\b"
   echo ""
+  echo "Rook Installed"
   echo "Step 1 finished"
   echo -n "Start Step 2"
+  wait_on_pod /tmp/pvc_claim-mysql-pvc-claim
+  wait_on_pod /tmp/pvc_claim-wp-pv-claim
   while true; do
     sudo grep -i "done" /tmp/rk_step2 &> /dev/null
     if [[ "$?" -ne 0 ]]; then
