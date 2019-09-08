@@ -10,7 +10,7 @@ pane to the right -->
 You can use another branch of rook from  the repo by exporting
 `ROOK_BRANCH` beforehand i.e.
 
-`EXPORT ROOK_BRANCH=master`{{execute}}
+`export ROOK_BRANCH=master`{{execute}}
 
 ### Run the script
 
