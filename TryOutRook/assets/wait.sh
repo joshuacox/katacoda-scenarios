@@ -1,7 +1,6 @@
 #!/bin/bash
 
-echo -n "Wait on () {"
-  wait_on_pod () {
+wait_on_pod () {
   what_to_wait_for=$1
   while true; do
     sudo grep -i "done" $what_to_wait_for  &> /dev/null
