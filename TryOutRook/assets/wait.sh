@@ -21,19 +21,18 @@ echo -n "Wait on () {"
 
 show_progress()
 {
-  echo "Starting"
   local -r pid="${1}"
   local -r delay='0.75'
   local spinstr='\|/-'
   local temp
-  echo "K8S Starting"
+  echo -n "K8S Starting"
   wait_on_pod /tmp/launch.sh
-  echo "K8S Started"
-  echo "Cloning Rook"
+  echo " -- K8S Started"
+  echo -n "Cloning Rook"
   wait_on_pod /tmp/rk_clone
-  echo "Rook Cloned"
-  echo "Step 1"
-  echo "Let's get Rook installed and running"
+  echo " -- Rook Cloned"
+  echo -n "Step 1"
+  echo " - Let's get Rook installed and running"
   echo -n "Wait on ceph-operator"
   wait_on_pod /tmp/rook-ceph-rook-ceph-operator
   echo -n "Wait on ceph-agent"
@@ -55,6 +54,7 @@ show_progress()
   echo -n "Wait on rook-ceph-mds"
   wait_on_pod /tmp/rook-ceph-rook-ceph-mds
   echo "Rook Installed"
+  echo -n "wait on step 1 to finish"
   wait_on_pod /tmp/rk_step1
   echo "Step 1 finished"
   echo "Start Step 2"
@@ -66,6 +66,7 @@ show_progress()
   echo -n "Wait on pvc claim wp-pv-claim"
   wait_on_pod /tmp/pvc_claim-wp-pv-claim
   echo "WP started"
+  echo -n "wait on step 2 to finish"
   wait_on_pod /tmp/rk_step2
   echo "Step 2 finished"
 }
