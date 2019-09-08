@@ -1,5 +1,5 @@
-## Check on Wordpres  and MySQL
+## Check on WP  and MySQL
 
-Check on the wordpress pods
+Check on the WP and MySQL pods
 
 `kubectl get pods`{{execute}}
