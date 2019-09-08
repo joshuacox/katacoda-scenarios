@@ -66,8 +66,8 @@ show_progress()
   wait_on_pod /tmp/rook-cephrook-ceph-osd
   wait_on_pod /tmp/rook-cephrook-ceph-tools
   wait_on_pod /tmp/rook-cephrook-discover
-  wait_on_pod /tmp/csi-cephfsplugin-provisioner
-  wait_on_pod /tmp/csi-rbdplugin-provisioner
+  wait_on_pod /tmp/rook-cephcsi-cephfsplugin-provisioner
+  wait_on_pod /tmp/rook-cephcsi-rbdplugin-provisioner
   printf "    \b\b\b\b"
   echo ""
   while true; do
