@@ -34,16 +34,16 @@ show_progress()
   echo "Rook Cloned"
   echo "Step 1"
   echo "Let's get Rook installed and running"
-  wait_on_pod /tmp/rook-cephrook-ceph-operator
-  wait_on_pod /tmp/rook-cephrook-ceph-agent
-  wait_on_pod /tmp/rook-cephrook-ceph-mds
-  wait_on_pod /tmp/rook-cephrook-ceph-mgr
-  wait_on_pod /tmp/rook-cephrook-ceph-mon
-  wait_on_pod /tmp/rook-cephrook-ceph-osd
-  wait_on_pod /tmp/rook-cephrook-ceph-tools
-  wait_on_pod /tmp/rook-cephrook-discover
-  wait_on_pod /tmp/rook-cephcsi-cephfsplugin-provisioner
-  wait_on_pod /tmp/rook-cephcsi-rbdplugin-provisioner
+  wait_on_pod /tmp/rook-ceph-rook-ceph-operator
+  wait_on_pod /tmp/rook-ceph-rook-ceph-agent
+  wait_on_pod /tmp/rook-ceph-rook-ceph-mgr
+  wait_on_pod /tmp/rook-ceph-rook-ceph-mon
+  wait_on_pod /tmp/rook-ceph-rook-ceph-osd
+  wait_on_pod /tmp/rook-ceph-rook-ceph-tools
+  wait_on_pod /tmp/rook-ceph-rook-discover
+  wait_on_pod /tmp/rook-ceph-csi-cephfsplugin-provisioner
+  wait_on_pod /tmp/rook-ceph-csi-rbdplugin-provisioner
+  wait_on_pod /tmp/rook-ceph-rook-ceph-mds
   wait_on_pod /tmp/rk_step1
   echo "Rook Installed"
   echo "Step 1 finished"
