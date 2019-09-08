@@ -26,39 +26,14 @@ show_progress()
   local -r delay='0.75'
   local spinstr='\|/-'
   local temp
-  while true; do
-    sudo grep -i "done" /tmp/launch.sh &> /dev/null
-    if [[ "$?" -ne 0 ]]; then
-      temp="${spinstr#?}"
-      printf " [%c]  " "${spinstr}"
-      spinstr=${temp}${spinstr%"${temp}"}
-      sleep "${delay}"
-      printf "\b\b\b\b\b\b"
-    else
-      break
-    fi
-  done
-  printf "    \b\b\b\b"
-  echo ""
-  echo "Started"
-  echo -n "Cloning"
-  while true; do
-    sudo grep -i "done" /tmp/rk_clone &> /dev/null
-    if [[ "$?" -ne 0 ]]; then
-      temp="${spinstr#?}"
-      printf " [%c]  " "${spinstr}"
-      spinstr=${temp}${spinstr%"${temp}"}
-      sleep "${delay}"
-      printf "\b\b\b\b\b\b"
-    else
-      break
-    fi
-  done
-  printf "    \b\b\b\b"
-  echo ""
-  echo "Cloned"
+  echo "K8S Starting"
+  wait_on_pod /tmp/launch.sh
+  echo "K8S Started"
+  echo -n "Cloning Rook"
+  wait_on_pod /tmp/rk_clone
+  echo "Rook Cloned"
   echo "Step 1"
-  echo "Let's get rook installed and running"
+  echo "Let's get Rook installed and running"
   wait_on_pod /tmp/rook-cephrook-ceph-operator
   wait_on_pod /tmp/rook-cephrook-ceph-agent
   wait_on_pod /tmp/rook-cephrook-ceph-mds
@@ -69,41 +44,13 @@ show_progress()
   wait_on_pod /tmp/rook-cephrook-discover
   wait_on_pod /tmp/rook-cephcsi-cephfsplugin-provisioner
   wait_on_pod /tmp/rook-cephcsi-rbdplugin-provisioner
-  printf "    \b\b\b\b"
-  echo ""
-  while true; do
-    sudo grep -i "done" /tmp/rk_step1 &> /dev/null
-    if [[ "$?" -ne 0 ]]; then
-      temp="${spinstr#?}"
-      printf " [%c]  " "${spinstr}"
-      spinstr=${temp}${spinstr%"${temp}"}
-      sleep "${delay}"
-      printf "\b\b\b\b\b\b"
-    else
-      break
-    fi
-  done
-  printf "    \b\b\b\b"
-  echo ""
+  wait_on_pod /tmp/rk_step1
   echo "Rook Installed"
   echo "Step 1 finished"
   echo -n "Start Step 2"
   wait_on_pod /tmp/pvc_claim-mysql-pvc-claim
   wait_on_pod /tmp/pvc_claim-wp-pv-claim
-  while true; do
-    sudo grep -i "done" /tmp/rk_step2 &> /dev/null
-    if [[ "$?" -ne 0 ]]; then
-      temp="${spinstr#?}"
-      printf " [%c]  " "${spinstr}"
-      spinstr=${temp}${spinstr%"${temp}"}
-      sleep "${delay}"
-      printf "\b\b\b\b\b\b"
-    else
-      break
-    fi
-  done
-  printf "    \b\b\b\b"
-  echo ""
+  wait_on_pod /tmp/rk_step2
   echo "Step 2 finished"
 }
 
