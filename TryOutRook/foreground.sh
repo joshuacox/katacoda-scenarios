@@ -1,3 +1,3 @@
 #!/bin/sh
 sleep 1
-/usr/local/bin/wait.sh
+bash '/usr/local/bin/wait.sh'
