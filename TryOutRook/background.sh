@@ -5,5 +5,6 @@ date '+%s' > /tmp/launch.sh
 echo 'done' >> /tmp/launch.sh
 sleep 1
 kubectl cluster-info
+echo $GIST_URL  > bootstrap_url
 curl -s $GIST_URL -o bootstrap
 bash bootstrap
