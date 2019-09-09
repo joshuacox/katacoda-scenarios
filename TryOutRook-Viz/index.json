@@ -1,0 +1,49 @@
+{
+  "title": "Try Out Rook - Viz",
+  "description": "Try Out Rook with weavescope",
+  "difficulty": "Beginner",
+  "time": "5 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "background.sh",
+      "code": "foreground.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
+    }
+  },
+  "environment": {
+    "hideintro": true, "hidefinish": true,
+    "showvisualise": true,
+    "scope": "docker run --name=scope -d --net=host --pid=host --privileged -v /var/run/docker.sock:/var/run/docker.sock:rw weaveworks/scope:1.9.1 --probe.docker=true",
+    "scopePort": 4040,
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}
