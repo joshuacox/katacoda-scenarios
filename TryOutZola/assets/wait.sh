@@ -24,9 +24,15 @@ wait_on_thing () {
 
 show_progress()
 {
+  echo -n 'Wait on Launch'
   wait_on_thing /tmp/launch.sh
+  echo ' Launched'
+  echo -n 'Wait on clone'
   wait_on_thing /tmp/cloned.done
+  echo ' Cloned'
+  echo -n 'Wait on docker to build'
   wait_on_thing /tmp/docker.built
+  echo ' Built'
 }
 
 show_progress
