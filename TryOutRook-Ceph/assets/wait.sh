@@ -33,9 +33,9 @@ show_progress()
   echo -n "Starting Rook Common"
   wait_on_pod /tmp/rk_common
   echo " -- Rook Common Done"
-  echo -n "Start Ceph"
   echo " - Let's get Rook installed and running"
   if [[ $DO_RK_CEPH == "true" ]]; then
+    echo -n "Start Ceph"
     echo -n "Wait on ceph-operator"
     wait_on_pod /tmp/rook-ceph-rook-ceph-operator
     echo -n "Wait on rook-discover"
