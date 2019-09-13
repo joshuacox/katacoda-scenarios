@@ -30,32 +30,34 @@ show_progress()
   echo -n "Cloning Rook"
   wait_on_pod /tmp/rk_clone
   echo " -- Rook Cloned"
-  echo -n "Step 1"
+  echo -n "Starting Rook Common"
+  wait_on_pod /tmp/rk_common
+  echo " -- Rook Common Done"
+  echo -n "Start Ceph"
   echo " - Let's get Rook installed and running"
-  echo -n "Wait on ceph-operator"
-  wait_on_pod /tmp/rook-ceph-rook-ceph-operator
-  echo -n "Wait on rook-discover"
-  wait_on_pod /tmp/rook-ceph-rook-discover
-  echo -n "Wait on csi-cephfsplugin-provisioner"
-  wait_on_pod /tmp/rook-ceph-csi-cephfsplugin-provisioner
-  echo -n "Wait on csi-rbdplugin-provisioner"
-  wait_on_pod /tmp/rook-ceph-csi-rbdplugin-provisioner
-  echo -n "Wait on ceph-agent"
-  wait_on_pod /tmp/rook-ceph-rook-ceph-agent
-  echo -n "Wait on rook-ceph-tools"
-  wait_on_pod /tmp/rook-ceph-rook-ceph-tools
-  echo -n "Wait on rook-ceph-osd"
-  wait_on_pod /tmp/rook-ceph-rook-ceph-osd
-  echo -n "Wait on ceph-mon"
-  wait_on_pod /tmp/rook-ceph-rook-ceph-mon
-  echo -n "Wait on rook-ceph-mgr"
-  wait_on_pod /tmp/rook-ceph-rook-ceph-mgr
-  echo -n "Wait on rook-ceph-mds"
-  wait_on_pod /tmp/rook-ceph-rook-ceph-mds
+  if [[ $DO_RK_CEPH == "true" ]]; then
+    echo -n "Wait on ceph-operator"
+    wait_on_pod /tmp/rook-ceph-rook-ceph-operator
+    echo -n "Wait on rook-discover"
+    wait_on_pod /tmp/rook-ceph-rook-discover
+    echo -n "Wait on csi-cephfsplugin-provisioner"
+    wait_on_pod /tmp/rook-ceph-csi-cephfsplugin-provisioner
+    echo -n "Wait on csi-rbdplugin-provisioner"
+    wait_on_pod /tmp/rook-ceph-csi-rbdplugin-provisioner
+    echo -n "Wait on ceph-agent"
+    wait_on_pod /tmp/rook-ceph-rook-ceph-agent
+    echo -n "Wait on rook-ceph-tools"
+    wait_on_pod /tmp/rook-ceph-rook-ceph-tools
+    echo -n "Wait on rook-ceph-osd"
+    wait_on_pod /tmp/rook-ceph-rook-ceph-osd
+    echo -n "Wait on ceph-mon"
+    wait_on_pod /tmp/rook-ceph-rook-ceph-mon
+    echo -n "Wait on rook-ceph-mgr"
+    wait_on_pod /tmp/rook-ceph-rook-ceph-mgr
+    echo -n "Wait on rook-ceph-mds"
+    wait_on_pod /tmp/rook-ceph-rook-ceph-mds
+  fi
   echo "Rook Installed"
-  echo -n "wait on step 1 to finish"
-  wait_on_pod /tmp/rk_step1
-  echo "Step 1 finished"
   echo "Start Step 2"
   echo "Start MySQL"
   echo -n "Wait on pvc claim mysql-pvc-claim"
@@ -65,9 +67,6 @@ show_progress()
   echo -n "Wait on pvc claim wp-pv-claim"
   wait_on_pod /tmp/pvc_claim-wp-pv-claim
   echo "WP started"
-  echo -n "wait on step 2 to finish"
-  wait_on_pod /tmp/rk_step2
-  echo "Step 2 finished"
 }
 
 show_progress
