@@ -24,9 +24,9 @@ wait_on_thing () {
 
 show_progress()
 {
-  wait_on_pod /tmp/launch.sh
-  wait_on_pod /tmp/cloned.done
-  wait_on_pod /tmp/docker.built
+  wait_on_thing /tmp/launch.sh
+  wait_on_thing /tmp/cloned.done
+  wait_on_thing /tmp/docker.built
 }
 
 show_progress
