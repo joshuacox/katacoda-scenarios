@@ -35,6 +35,7 @@ show_progress()
   echo -n 'Wait on docker to build'
   wait_on_thing /tmp/docker.built
   echo ' Built'
+  echo '<-- Press the continue button to proceed to the next step.'
 }
 
 show_progress
