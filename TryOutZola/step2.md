@@ -1,29 +1,23 @@
 ## Run the container
 
-### Init
+##### Init
 
 `docker run -it getzola/zola-test init zola-test`{{execute}}
 
-### Build
+##### Build
 
 `docker run -v /root/test_site:/zola-test -it getzola/zola-test build`{{execute}}
 
-### Serve
+##### Serve
 
 `docker run -d --cidfile=/root/.zola-test.cid -p 80:1111 -v /root/test_site:/zola-test -it getzola/zola-test serve`{{execute}}
 
-### Copy the zola binary out of the container to /usr/local/bin
+At this point zola should be serving on port 80, but I am not getting anything back.
 
-`docker cp $(cat .zola-test.cid):/usr/bin/zola /usr/local/bin/zola`{{execute}}
-
-### Get the logs from the container
+##### Get the logs from the container
 
 `docker logs $(cat /root/.zola-test.cid)`{{execute}}
 
-### Execute Zola help
+##### Execute Zola help
 
 `docker exec -it $(cat /root/.zola-test.cid) zola help`{{execute}}
-
-### Local execution
-
-`cd /root/test_site && zola serve`{{execute}}
