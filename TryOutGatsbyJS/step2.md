@@ -2,6 +2,10 @@
 
 We'll follow the official tutorial [part-zero](https://www.gatsbyjs.org/tutorial/part-zero/) to get a Gatsby hello-world
 
+##### First install gatsby-cli
+
+`npm i -g gatsby-cli`{{execute}}
+
 ##### Show Gatsby help
 
 `gatsby --help`{{execute}}
