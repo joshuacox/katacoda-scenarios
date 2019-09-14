@@ -1,4 +1,4 @@
-ALPHA state - things are broken - hopefully fixed soon
+ALPHA state - things are broken - hopefully fixed soon 1.1
 
 Welcome to Try Out Zola Scenario!
 
