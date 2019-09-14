@@ -1,4 +1,4 @@
-ALPHA state - things are broken - hopefully fixed soon 0.6
+ALPHA state - things are broken - hopefully fixed soon 0.7
 
 Welcome to the Try Out GatsbyJS Scenario!
 
