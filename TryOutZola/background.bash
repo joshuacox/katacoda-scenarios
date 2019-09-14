@@ -5,5 +5,12 @@ sleep 1
 git clone --depth=1 https://github.com/getzola/zola.git
 echo 'done' >> /tmp/cloned.done
 cd zola
-docker build -t getzola/zola-test .
+cp -a test_site ../
+docker build -t getzola/zola-bin .
 echo 'done' >> /tmp/docker.built
+cd -
+cd test_site
+echo 'FROM getzola/zola-bin' > Dockerfile
+echo 'COPY . /zola-test' >> Dockerfile
+echo 'WORKDIR /zola-test' >> Dockerfile
+docker build -t getzola/zola-test .
