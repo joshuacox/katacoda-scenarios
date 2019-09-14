@@ -1,5 +1,7 @@
 ## Initialize a directory for Gatsby, build, and serve
 
+We'll follow the official tutorial [part-zero](https://www.gatsbyjs.org/tutorial/part-zero/) to get a Gatsby hello-world
+
 ##### Show Gatsby help
 
 `gatsby --help`{{execute}}
@@ -14,4 +16,4 @@
 
 `gatsby develop`{{execute}}
 
-##### You should now be able to view gatsby
+##### You should now be able to view gatsby on port 8000

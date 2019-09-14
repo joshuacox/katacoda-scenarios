@@ -14,12 +14,36 @@
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Part One",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Part Two",
         "text": "step4.md"
+      },
+      {
+        "title": "Part Three",
+        "text": "step5.md"
+      },
+      {
+        "title": "Part Four",
+        "text": "step6.md"
+      },
+      {
+        "title": "Part Five",
+        "text": "step7.md"
+      },
+      {
+        "title": "Part Six",
+        "text": "step8.md"
+      },
+      {
+        "title": "Part Seven",
+        "text": "step9.md"
+      },
+      {
+        "title": "Part Eight",
+        "text": "step10.md"
       }
     ],
     "intro": {
@@ -38,7 +62,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "node6"
