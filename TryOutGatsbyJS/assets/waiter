@@ -38,13 +38,13 @@ show_progress()
   nvm use --default --lts
   nvm alias default node
   echo -n 'Install Gatsby'
-  sleep 1
+  sleep 2
   echo -n '.'
-  sleep 1
+  sleep 2
   echo -n '.'
-  sleep 1
+  sleep 2
   echo '.'
-  npm i -g gatsby-cli
+  bash -l -c 'npm i -g gatsby-cli'
   echo 'Gatsby has been installed'
   echo '<-- Press the continue button to proceed to the next step.'
 }
