@@ -22,6 +22,6 @@ We'll follow the official tutorial [part-zero](https://www.gatsbyjs.org/tutorial
 
 `cd hello-world`{{execute}}
 
-`gatsby develop`{{execute}}
+`gatsby develop --port 80 --host 0.0.0.0`{{execute}}
 
-##### You should now be able to view gatsby on port 8000
+##### You should now be able to view gatsby on port 80

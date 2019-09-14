@@ -17,4 +17,4 @@ Let's return to our home directory
 
 And restart gatsby:
 
-`gatsby develop`{{execute}}
+`gatsby develop --port 80 --host 0.0.0.0`{{execute}}

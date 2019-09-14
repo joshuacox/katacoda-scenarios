@@ -17,4 +17,4 @@ Let's return to our home directory
 
 Now let's restart it to include the new plugins.
 
-`gatsby develop`{{execute}}
+`gatsby develop --port 80 --host 0.0.0.0`{{execute}}
