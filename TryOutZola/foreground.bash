@@ -1,3 +1,5 @@
 #!/bin/bash
+sleep 1
 . /usr/local/bin/set-env.bash
-/usr/local/bin/waiter
+. /opt/set-env.bash
+/opt/waiter
