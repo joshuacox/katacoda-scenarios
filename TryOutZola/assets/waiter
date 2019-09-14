@@ -1,5 +1,5 @@
 #!/bin/bash
-. ~/set-env.sh
+. /usr/local/bin/set-env.bash
 
 wait_on_thing () {
   local -r pid="${1}"
