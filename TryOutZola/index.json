@@ -32,6 +32,7 @@
     },
     "assets": {
       "host01": [
+        {"file": "wait.sh", "target": "~/", "chmod": "+x"},
         {"file": "set-env.sh", "target": "~/", "chmod": "+x"}
       ]
     }
