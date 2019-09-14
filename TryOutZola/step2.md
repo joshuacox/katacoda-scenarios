@@ -23,3 +23,7 @@
 ### Execute Zola help
 
 `docker exec -it $(cat /root/.zola-test.cid) zola help`{{execute}}
+
+### Local execution
+
+`cd /root/test_site && zola serve`{{execute}}
