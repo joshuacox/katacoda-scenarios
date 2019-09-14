@@ -10,6 +10,10 @@ We'll follow the official tutorial [part-zero](https://www.gatsbyjs.org/tutorial
 
 `gatsby --help`{{execute}}
 
+##### Optionally install yarn if you want to choose it as your package manager in the following step
+
+`npm i -g yarn`{{execute}}
+
 ##### Init
 
 `gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world`{{execute}}
