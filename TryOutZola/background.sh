@@ -1,5 +1,5 @@
 #!/bin/bash
-source /usr/local/bin/set-env.sh
+source ~/set-env.sh
 #launch.sh
 echo 'done' >> /tmp/launch.sh
 sleep 1
