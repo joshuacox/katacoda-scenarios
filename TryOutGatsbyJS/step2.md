@@ -2,6 +2,8 @@
 
 We'll follow the official tutorial [part-zero](https://www.gatsbyjs.org/tutorial/part-zero/) to get a Gatsby hello-world
 
+I'll have all the commands queued up for you below, but you'll still need to follow along the tutorial.
+
 ##### First install gatsby-cli
 
 `npm i -g gatsby-cli`{{execute}}
