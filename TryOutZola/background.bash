@@ -7,10 +7,10 @@ echo 'done' >> /tmp/cloned.done
 cd zola
 cp -a test_site ../
 docker build -t getzola/zola-bin .
-echo 'done' >> /tmp/docker.built
 cd -
 cd test_site
 echo 'FROM getzola/zola-bin' > Dockerfile
 echo 'COPY . /zola-test' >> Dockerfile
 echo 'WORKDIR /zola-test' >> Dockerfile
 docker build -t getzola/zola-test .
+echo 'done' >> /tmp/docker.built
