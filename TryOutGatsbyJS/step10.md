@@ -9,7 +9,7 @@ Again you will need to stop the `gatsby develop` process from the previous step.
 
 `npm install --save gatsby-plugin-manifest gatsby-plugin-offline gatsby-plugin-react-helmet react-helmet`{{execute}}
 
-#### Build and Serve
+Build and Serve
 
 `gatsby build`{{execute}}
 
