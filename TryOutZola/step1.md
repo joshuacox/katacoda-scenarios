@@ -1,4 +1,4 @@
-## Build Zola Docker Container 1.1
+## Build Zola Docker Container
 
 First let's clone the zola repo and build the docker image.
 
