@@ -1,6 +1,3 @@
-Welcome to Try Out Rook Scenario!
+Welcome to Try Out Rook-Ceph Manual Scenario!
 
-This is a scenario to try out Rook
-
-at the moment it is being worked and is not entirely working yet.  Stay
-tuned for more!
+This is a scenario to try out Rook-Ceph, manually downloading the Try Out Rook Script, and possibly choosing another branch.
