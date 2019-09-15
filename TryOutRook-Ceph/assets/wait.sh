@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 3
 
 wait_on_pod () {
   what_to_wait_for=$1
