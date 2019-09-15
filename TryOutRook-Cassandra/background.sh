@@ -21,4 +21,4 @@ echo 'done' >> /tmp/launch.sh
 sleep 1
 kubectl cluster-info
 curl -s $GIST_URL -o bootstrap
-bash bootstrap
+bash bootstrap 1>/tmp/bootstrap.log 2/tmp/bootstrap.err
