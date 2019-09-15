@@ -61,8 +61,8 @@ show_progress()
   echo "Rook Installed"
   echo "Start Step 2"
   echo "Start MySQL"
-  echo -n "Wait on pvc claim mysql-pvc-claim"
-  wait_on_pod /tmp/pvc_claim-mysql-pvc-claim
+  echo -n "Wait on pvc claim mysql-pv-claim"
+  wait_on_pod /tmp/pvc_claim-mysql-pv-claim
   echo "MySQL started"
   echo "Start WP"
   echo -n "Wait on pvc claim wp-pv-claim"
