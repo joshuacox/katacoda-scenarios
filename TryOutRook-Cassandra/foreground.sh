@@ -2,7 +2,7 @@
 sleep 1
 wait_for_exist () {
   countzero=0
-  while (true) {
+  while true; do
     if [[ -e  $1 ]]; then
       break
     elif [[ $counzero > 30 ]]; then
@@ -10,7 +10,7 @@ wait_for_exist () {
     fi
     sleep 1
     ((++countzero))
-  }
+  done
 }
 wait_for_exist /usr/local/bin/set-env.sh
 source /usr/local/bin/set-env.sh
