@@ -32,7 +32,7 @@
     },
     "assets": {
       "host01": [
-        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+        {"file": "waiter", "target": "/usr/local/bin/", "chmod": "+x"},
         {"file": "set-env.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
