@@ -4,7 +4,7 @@ Now let's run the [TryOutRook script](https://gist.github.com/joshuacox/30c0b087
 
 ## Grab the script
 
-`curl -s https://gist.githubusercontent.com/joshuacox/30c0b0871622b233195a8bb5229ee5e4/raw/fc8c9f7eebc863012c4d93960e1d5a146929704c/gistfile1.txt -o bootstrap`{{execute}}
+`curl -s https://gist.githubusercontent.com/joshuacox/30c0b0871622b233195a8bb5229ee5e4/raw/920183b3d5462900bd66d26ef2e106944a26d74a/gistfile1.txt -o bootstrap`{{execute}}
 
 You should now have that script as a file named `bootstrap` in the editor
 pane to the right. -->
