@@ -10,7 +10,7 @@
 
 ##### Serve
 
-`docker run -d --cidfile=/root/.zola-test.cid -p 80:1111 -v /root/test_site:/zola-test -it getzola/zola-test serve`{{execute}}
+`docker run -d --cidfile=/root/.zola-test.cid -p 80:1111 -v /root/test_site:/zola-test -it getzola/zola-test serve -i 0.0.0.0`{{execute}}
 
 At this point zola should be serving on port 80, but I am not getting anything back.
 
