@@ -58,15 +58,6 @@ show_progress()
     wait_on_pod /tmp/rook-ceph-rook-ceph-mds
   fi
   echo "Rook Installed"
-  echo "Start Step 2"
-  echo "Start MySQL"
-  echo -n "Wait on pvc claim mysql-pv-claim"
-  wait_on_pod /tmp/pvc_claim-mysql-pv-claim
-  echo "MySQL started"
-  echo "Start WP"
-  echo -n "Wait on pvc claim wp-pv-claim"
-  wait_on_pod /tmp/pvc_claim-wp-pv-claim
-  echo "WP started"
 }
 
 show_progress
