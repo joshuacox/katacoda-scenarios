@@ -1,3 +1,6 @@
-#### Next Building Blocks
+#### Create the test site
 
-Now we can use the text editor pane on the right to complete the next
+First create a new `nextjs-test` site:
+
+`npx create-next-app`{{execute}}
+
