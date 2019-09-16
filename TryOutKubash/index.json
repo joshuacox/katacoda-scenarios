@@ -1,0 +1,73 @@
+{
+  "title": "Try Out Kubash",
+  "description": "Try Out Kubash",
+  "difficulty": "Beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Part One",
+        "text": "step3.md"
+      },
+      {
+        "title": "Part Two",
+        "text": "step4.md"
+      },
+      {
+        "title": "Part Three",
+        "text": "step5.md"
+      },
+      {
+        "title": "Part Four",
+        "text": "step6.md"
+      },
+      {
+        "title": "Part Five",
+        "text": "step7.md"
+      },
+      {
+        "title": "Part Six",
+        "text": "step8.md"
+      },
+      {
+        "title": "Part Seven",
+        "text": "step9.md"
+      },
+      {
+        "title": "Part Eight",
+        "text": "step10.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "background.bash",
+      "code": "foreground.bash"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "waiter", "target": "/usr/local/bin/", "chmod": "+x"},
+        {"file": "set-env.bash", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
+    }
+  },
+  "environment": {
+    "showvisualise": true,
+    "scope": "docker run --name=scope -d --net=host --pid=host --privileged -v /var/run/docker.sock:/var/run/docker.sock:rw weaveworks/scope:1.9.1 --probe.docker=true",
+    "scopePort": 4040,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}
