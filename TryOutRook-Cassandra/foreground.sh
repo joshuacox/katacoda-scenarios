@@ -12,7 +12,7 @@ wait_for_exist () {
     ((++countzero))
   done
 }
-wait_for_exist /usr/local/bin/set-env.sh
-source /usr/local/bin/set-env.sh
+wait_for_exist /usr/local/bin/set-env.bash
+source /usr/local/bin/set-env.bash
 wait_for_exist /usr/local/bin/waiter
 bash /usr/local/bin/waiter

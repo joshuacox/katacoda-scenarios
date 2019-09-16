@@ -12,8 +12,8 @@ wait_for_exist () {
     ((++countzero))
   done
 }
-wait_for_exist /usr/local/bin/set-env.sh
-source /usr/local/bin/set-env.sh
+wait_for_exist /usr/local/bin/set-env.bash
+source /usr/local/bin/set-env.bash
 
 wait_on_pod () {
   what_to_wait_for=$1
