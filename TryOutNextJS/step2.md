@@ -12,6 +12,6 @@ Assuming you called your project `nextjs-test`:
 
 `cd nextjs-test`{{execute}}
 
-`npm run dev -- -p 80`{{execute}}
+`npm run dev -- --port 80 --hostname 0.0.0.0`{{execute}}
 
-You should now be able to view your test site on port 80
+You should now be able to view your test site on port 80.  Of note, we are using the option `--port 80 --hostname 0.0.0.0` here to make the other panes work to the right when viewing port 80, at home on your local machine you can leave these off and then visit 127.0.0.1 or localhost on port 3000.
