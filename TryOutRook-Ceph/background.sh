@@ -15,6 +15,8 @@ wait_for_exist () {
 }
 wait_for_exist /usr/local/bin/set-env.bash
 source /usr/local/bin/set-env.bash
+cat /usr/local/bin/set-env.bash
+echo "DEBUG is $DEBUG"
 launch.sh
 date '+%s' > /tmp/launch.sh
 echo 'done' >> /tmp/launch.sh
