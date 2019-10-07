@@ -59,8 +59,6 @@ show_progress()
     wait_on_pod /tmp/rook-ceph-csi-cephfsplugin-provisioner
     echo -n "Wait on csi-rbdplugin-provisioner"
     wait_on_pod /tmp/rook-ceph-csi-rbdplugin-provisioner
-    echo -n "Wait on ceph-agent"
-    wait_on_pod /tmp/rook-ceph-rook-ceph-agent
     echo -n "Wait on rook-ceph-tools"
     wait_on_pod /tmp/rook-ceph-rook-ceph-tools
     echo -n "Wait on rook-ceph-osd"

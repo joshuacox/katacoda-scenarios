@@ -1,4 +1,5 @@
 #!/bin/bash
+GIST_URL='https://gist.github.com/joshuacox/30c0b0871622b233195a8bb5229ee5e4/raw/9930d1e7329ebf4a5ef9c6d4009e20ce302dae29/gistfile1.txt'
 sleep 1
 wait_for_exist () {
   countzero=0
@@ -14,7 +15,6 @@ wait_for_exist () {
 }
 wait_for_exist /usr/local/bin/set-env.bash
 source /usr/local/bin/set-env.bash
-GIST_URL='https://gist.githubusercontent.com/joshuacox/30c0b0871622b233195a8bb5229ee5e4/raw/bac4db5727c4c5ef498475e4fc22908126020c2b/gistfile1.txt'
 launch.sh
 date '+%s' > /tmp/launch.sh
 echo 'done' >> /tmp/launch.sh
