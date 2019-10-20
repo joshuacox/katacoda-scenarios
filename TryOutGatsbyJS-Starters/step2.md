@@ -2,9 +2,13 @@
 
 This time we'll install a gatsby starter and go from there.
 
+First install gatsby-cli
+
+`npm i -g gatsby-cli`{{execute}}
+
 Show Gatsby help
 
-`gatsby --help`{{execute}}
+`gatsby new --help`{{execute}}
 
 The `gatsby new` command will install a gatsby
 [starter](https://www.gatsbyjs.org/docs/starters/)
