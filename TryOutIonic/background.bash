@@ -10,7 +10,7 @@ nvm install --lts
 nvm use --default --lts
 nvm alias default node
 echo 'done' >> /tmp/nvm-installed.sh
-npm i -g ionic@latest
+npm i -g ionic
 echo 'done' >> /tmp/ionic-installed.sh
 echo 'done' >> /tmp/launch.sh
 sleep 1
