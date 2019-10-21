@@ -46,9 +46,9 @@ show_progress()
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
   command -v nvm
   wait_on_thing /tmp/gatsby-installed.sh
-  echo -n 'Wait on Launch'
+  echo -n 'Gatsby Installed'
   wait_on_thing /tmp/launch.sh
-  echo ' Launched'
+  echo 'All set..'
   echo '<-- Press the continue button to proceed to the next step.'
 }
 

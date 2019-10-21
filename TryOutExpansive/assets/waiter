@@ -42,7 +42,7 @@ show_progress()
   sleep 1
   echo -n 'Wait on Launch'
   wait_on_thing /tmp/launch.sh
-  echo ' Launched'
+  echo 'Now cloning expansive'
   git clone --depth=1 https://github.com/embedthis/expansive.git
   echo '<-- Press the continue button to proceed to the next step.'
 }
