@@ -2,10 +2,6 @@
 
 This time we'll install a ionic starter and go from there.
 
-First install ionic:
-
-`npm i -g ionic@latest`{{execute}}
-
 Show Ionic help:
 
 `ionic start --help`{{execute}}
