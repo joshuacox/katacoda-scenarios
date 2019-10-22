@@ -42,8 +42,15 @@ show_progress()
   sleep 1
   echo -n 'Wait on Launch'
   wait_on_thing /tmp/launch.sh
-  npm i -g gatsby-cli
   echo ' Launched'
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  command -v nvm
+  nvm install --lts
+  nvm use --default --lts
+  nvm alias default node
   echo '<-- Press the continue button to proceed to the next step.'
 }
 
