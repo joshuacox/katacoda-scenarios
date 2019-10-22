@@ -14,8 +14,11 @@ wait_for_exist () {
 }
 wait_for_exist /usr/local/bin/set-env.bash
 source /usr/local/bin/set-env.bash
+
+git config --global user.email "testy@mctesterson.com"
+git config --global user.name "Testy McTesterson"
+npm i -g ionic
+echo 'done' >> /tmp/ionic-installed.sh
+
 wait_for_exist /usr/local/bin/waiter
 /usr/local/bin/waiter
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
