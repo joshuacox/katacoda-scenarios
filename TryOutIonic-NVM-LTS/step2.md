@@ -14,11 +14,4 @@ then change directory into your new starter:
 
 `cd myApp`{{execute}}
 
-Build and Serve in Developer mode:
-
-`ionic serve --port 80 --external --address 0.0.0.0`{{execute}}
-
-You should now be able to view ionic on port 80.
-
-[Continue](https://ionicframework.com/docs/react/your-first-app) with
-the official documentation.
+and continue with the next step.
