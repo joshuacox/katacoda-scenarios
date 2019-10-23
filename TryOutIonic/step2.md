@@ -6,9 +6,14 @@ Show Ionic help:
 
 `ionic start --help`{{execute}}
 
+To get a list of things to try other than 'conference' use the `--list`
+option:
+
+`ionic start --list`{{execute}}
+
 The `ionic start` command will initialize an ionic directory.
 
-`ionic start myApp blank --type=react `{{execute}}
+`ionic start myApp conference --type=react `{{execute}}
 
 then change directory into your new starter:
 
