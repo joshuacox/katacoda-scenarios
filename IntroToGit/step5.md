@@ -50,7 +50,8 @@ by default this is where you usually start when opening a shell
 
 `git add test1`{{execute}}
 
-^ Add our new file to gits tracking system.
+^ Add our new file to the git source code tracking system.
+
 
 `git status`{{execute}}
 
@@ -91,6 +92,11 @@ by default this is where you usually start when opening a shell
 `git diff`{{execute}}
 
 ^ Show us the changes.
+
+`git add .`{{execute}}
+
+^ This adds all files and changes present in this directory and all
+sub-directories to git source code management tracking system.
 
 `git commit -am 'second test'`{{execute}}
 
