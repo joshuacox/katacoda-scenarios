@@ -1,6 +1,6 @@
 #!/bin/bash
 . /usr/local/bin/set-env.bash
-git config --global user.email "testy@mctesterson.com"
+git config --global user.email "testy@example.com"
 git config --global user.name "Testy McTesterson"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
