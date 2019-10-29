@@ -61,5 +61,6 @@ Type these commands directly into bash your terminal on the right -->
 
 `git log`{{execute}}
 
+### WTF?!?!
 
 After typing all the commands above click continue.
