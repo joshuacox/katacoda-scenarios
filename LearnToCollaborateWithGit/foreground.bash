@@ -14,5 +14,5 @@ wait_for_exist () {
 }
 wait_for_exist /usr/local/bin/set-env.bash
 source /usr/local/bin/set-env.bash
-wait_for_exist /usr/local/bin/waiter
-/usr/local/bin/waiter
+#wait_for_exist /usr/local/bin/waiter
+#/usr/local/bin/waiter

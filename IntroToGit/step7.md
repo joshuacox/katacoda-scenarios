@@ -5,9 +5,8 @@ Let’s get you your own repo and make a static page
 If you don’t have a github account get one it’s free
 
 now make a new repo, first let’s make sure we are in our git directory in the home folder
-```
-cd ~/git
-```
+
+`cd ~/git`{{execute}}
 
 ok now let's clone that repo! There is a link in the bottom righthand corner copy it then `git clone` that link
 

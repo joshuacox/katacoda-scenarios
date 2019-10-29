@@ -39,18 +39,10 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
-      "courseData": "background.bash",
-      "code": "foreground.bash"
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {"file": "waiter", "target": "/usr/local/bin/", "chmod": "+x"},
-        {"file": "set-env.bash", "target": "/usr/local/bin/", "chmod": "+x"}
-      ]
     }
   },
   "environment": {
