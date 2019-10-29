@@ -1,6 +1,6 @@
 {
-  "title": "Intro to Git",
-  "description": "Intro to Git",
+  "title": "Intro to Git CLI",
+  "description": "A beginer freindly intro to Git using the Command Line Interface",
   "difficulty": "Beginner",
   "time": "15 minutes",
   "details": {
