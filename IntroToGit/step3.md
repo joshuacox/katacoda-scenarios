@@ -9,9 +9,9 @@ pwd
 ```
 ^ Print Working Directory (the "you are here" of unix land)
 ```
-mkdir
+mkdir dir_to_make
 ```
-^ make directory/folder
+^ make directory/folder named `dir_to_make`
 ```
 cd
 ```
