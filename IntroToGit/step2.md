@@ -7,7 +7,7 @@ Note: you can click the commands below and they will be pasted and
 executed into the terminal on the right.  However, if you want to learn
 I recommend you type them.
 
-Type these commands directly into bash your terminal on the right -->
+Type these commands directly into the Bash your terminal on the right -->
 
 `pwd`{{execute}}
 
