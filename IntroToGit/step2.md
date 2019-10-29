@@ -3,6 +3,9 @@ Cli-Intro-to-Git
 
 ### Introduction to git on the command line in 60 seconds or less
 
+Note: you can click the commands below and they will be pasted and
+executed into the terminal on the right.  However, if you want to learn
+I recommend you type them.
 
 Type these commands directly into bash your terminal on the right -->
 
