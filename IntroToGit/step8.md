@@ -1,10 +1,12 @@
 Now `cd` into that repo.
 
-`cd YOURREPO`{{execute}}
+```
+cd YOURREPO
+```
 
 Make a new readme and add it to git as a tracked file, commit, then push it back up to github.
 
-`echo ‘# Howdy folks!’>README.md`{{execute}}
+`echo "Howdy folks" > README.md`{{execute}}
 
 ^ The `echo` command is an easy way to add a line to a file, or in this case overwrite the file (which is the difference between > and >>, but I’ll save the rest of that lecture for a tutorial on STDIN STDOUT and STDERR redirection and piping!).
 

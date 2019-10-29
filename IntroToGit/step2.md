@@ -23,7 +23,7 @@ Type these commands directly into the Bash your terminal on the right -->
 
 `git init`{{execute}}
 
-`echo 'my test' >test1`{{execute}}
+`echo 'my test' > test1`{{execute}}
 
 `ls`{{execute}}
 
