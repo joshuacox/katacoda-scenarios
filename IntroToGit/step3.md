@@ -1,4 +1,4 @@
- Ok so that was git in 60 seconds (if you are a fast typist). 
+ Ok so that was git in 60 seconds (if you are a fast typist).
 
  What just went on?  
 

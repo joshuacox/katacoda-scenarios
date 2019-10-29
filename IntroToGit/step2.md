@@ -35,6 +35,9 @@ Type these commands directly into bash your terminal on the right -->
 
 `git commit -am 'initial add of test1'`{{execute}}
 
+^this command will fail with an error message about git requesting you
+identify yourself, so let's do that.
+
 `git config --global user.email "testy@example.com"`{{execute}}
 
 `git config --global user.name "Testy McTesterson"`{{execute}}

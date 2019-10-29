@@ -56,6 +56,14 @@ by default this is where you usually start when opening a shell
 
 ^ show us that the new file has now been added
 
+`git config --global user.email "testy@example.com"`{{execute}}
+
+^ This adds your email to your local gitconfig `~/.gitconfig`
+
+`git config --global user.name "Testy McTesterson"`{{execute}}
+
+^ This adds your name to your local gitconfig `~/.gitconfig`
+
 `git commit -am 'initial add of test1'`{{execute}}
 
 ^ make a commit and give it a nice message explaining what is going on
