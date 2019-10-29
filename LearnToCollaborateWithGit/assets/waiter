@@ -1,0 +1,49 @@
+#!/bin/bash
+sleep 1
+wait_for_exist () {
+  countzero=0
+  while true; do
+    if [[ -e  $1 ]]; then
+      break
+    elif [[ $counzero > 30 ]]; then
+      echo "$1 has not been created, investigate"
+    fi
+    sleep 1
+    ((++countzero))
+  done
+}
+wait_for_exist /usr/local/bin/set-env.bash
+source /usr/local/bin/set-env.bash
+
+wait_on_thing () {
+  local -r pid="${1}"
+  local -r delay='0.75'
+  local spinstr='\|/-'
+  local temp
+  what_to_wait_for=$1
+  while true; do
+    sudo grep -i "done" $what_to_wait_for  &> /dev/null
+    if [[ "$?" -ne 0 ]]; then
+      temp="${spinstr#?}"
+      printf " [%c]  " "${spinstr}"
+      spinstr=${temp}${spinstr%"${temp}"}
+      sleep "${delay}"
+      printf "\b\b\b\b\b\b"
+    else
+      break
+    fi
+  done
+  printf "    \b\b\b\b"
+  echo ""
+}
+
+show_progress()
+{
+  sleep 1
+  echo -n 'Wait on Launch'
+  wait_on_thing /tmp/launch.sh
+  echo ' Launched'
+  echo '<-- Press the continue button to proceed to the next step.'
+}
+
+show_progress
