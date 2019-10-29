@@ -13,7 +13,7 @@ I recommend you type them.
 `echo $SHELL`{{execute}}
 
 ^ This command will output the name of the running shell of our VM which
-should be `bash`.
+should be `/bin/bash`.
 
 `whoami`{{execute}}
 
