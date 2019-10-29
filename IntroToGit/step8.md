@@ -20,7 +20,11 @@ make a new readme and add it to git as a tracked file, commit, then push it back
 
 ^ push it all back up to github (or whatever your origin is set to)
 
-now click on the ‘settings’ page for your repo, in there is large button labeled “Launch Automatic Page Generator”, on the resulting page click “Load README.md”, then click “Continue to Layouts” in the bottom right hand corner, choose a layout and save your static site, your new site is now available at an address like this one: 
+Now click on the ‘settings’ page for your repo.
+In there is large button labeled “Launch Automatic Page Generator”.
+On the resulting page click “Load README.md”.
+Then click “Continue to Layouts” in the bottom right hand corner.
+Choose a layout and save your static site, your new site is now available at an address like this one:
 
 http://YOURGITHUBID.github.io/YOURREPO
 
