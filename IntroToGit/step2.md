@@ -20,11 +20,17 @@ git status
 git add test1
 git status
 git commit -am 'initial add of test1'
+git config --global user.email "testy@mctesterson.com"
+git config --global user.name "Testy McTesterson"
+git commit -am 'initial add of test1'
 git log
 echo 'second test' >>test1
 git status
+git diff
 echo 'second test file'>test2
 git status
+git diff
+git add .
 git commit -am 'second test'
 git log
 ```
