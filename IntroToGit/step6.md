@@ -6,9 +6,6 @@ Okay from here let’s make a git directory in our home and start cloning repos 
 
 ^ given no arguments cd will take you home
 
-`pwd`{{execute}}
-
-
 `mkdir git`{{execute}}
 
 ^ there is no output for this command
