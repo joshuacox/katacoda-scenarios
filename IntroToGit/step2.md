@@ -64,7 +64,7 @@ identify yourself, so let's do that.
 
 `git log`{{execute}}
 
-### WTF?!?!
+##### WTF just happened?!?!
 
 After typing all the commands above click continue to go to an
 explanation of what just went on.
