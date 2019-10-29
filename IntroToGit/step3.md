@@ -31,3 +31,5 @@ Let me be a bit more verbose with an intro of some very basic commands with a ba
 `man git`{{execute}}
 
 ^ At some point you'll feel confident enough to just pull this page up for reference. Again type a `Q` to quit the manual pager.
+
+Click the continue button to continue.

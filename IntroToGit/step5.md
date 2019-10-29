@@ -99,3 +99,5 @@ by default this is where you usually start when opening a shell
 `git log`{{execute}}
 
 ^ show us a log of the history of this git repo
+
+Click the continue button to continue.

@@ -20,3 +20,4 @@ but let's prove to ourselves that we changed directories with `pwd`
 
 `pwd`{{execute}}
 
+Click the continue button to continue.

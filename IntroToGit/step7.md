@@ -24,3 +24,5 @@ Receiving objects: 100% (331/331), 3.65 MiB | 483.00 KiB/s, done.
 Resolving deltas: 100% (43/43), done.
 Checking connectivity... done.
 ```
+
+Click the continue button to continue.
