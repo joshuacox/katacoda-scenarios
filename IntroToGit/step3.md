@@ -26,10 +26,10 @@ Let me be a bit more verbose with an intro of some very basic commands with a ba
 
 `man ls`{{execute}}
 
-^ “manual” gives the manual page for any command i.e. `man ls` will give the manual page for ls. Type a `Q` to quit the manual pager.
+^ “manual” gives the manual page for any command i.e. `man ls` will give the manual page for ls. You will need to click on the terminal on the right and type a `Q` to quit the manual pager.
 
 `man git`{{execute}}
 
-^ At some point you'll feel confident enough to just pull this page up for reference. Again type a `Q` to quit the manual pager.
+^ At some point you'll feel confident enough to just pull this page up for reference. Again, you will need to click on the terminal on the right and type a `Q` to quit the manual pager.
 
 Click the continue button to continue.
