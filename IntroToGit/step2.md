@@ -66,4 +66,5 @@ identify yourself, so let's do that.
 
 ### WTF?!?!
 
-After typing all the commands above click continue.
+After typing all the commands above click continue to go to an
+explanation of what just went on.
