@@ -46,13 +46,13 @@ identify yourself, so let's do that.
 
 `git log`{{execute}}
 
-`echo 'second test' >>test1`{{execute}}
+`echo 'second test' >> test1`{{execute}}
 
 `git status`{{execute}}
 
 `git diff`{{execute}}
 
-`echo 'second test file'>test2`{{execute}}
+`echo 'second test file'> test2`{{execute}}
 
 `git status`{{execute}}
 
