@@ -1,4 +1,4 @@
-# Creating your own repo 
+# Creating your own repo
 
 Let’s get you your own repo and make a static page
 
