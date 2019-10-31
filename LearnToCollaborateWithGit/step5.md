@@ -27,6 +27,10 @@ Echo your name into the certified.md file:
 
 `echo YOUR_NAME >> certified.md`{{execute}}
 
+Important Note: notice the use of `>>` and NOT `>`.  This appends to the
+file instead of overwriting it! If you overwrite the file instead of
+appending then your pull request will be denied!
+
 Then let's show that certified.md file has changed:
 
 `git status`{{execute}}
@@ -34,6 +38,10 @@ Then let's show that certified.md file has changed:
 Then let's show the diffs:
 
 `git diff`{{execute}}
+
+If you messed and overwrote the file instead of appending this will be
+very evident at this point, as it will you show that you are removing everyone
+elses name!
 
 Now commit your changes:
 
