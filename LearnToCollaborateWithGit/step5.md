@@ -12,9 +12,7 @@ and copy it directly.
 Now back in the terminal on the right clone that repo like this
 (changing YOUR_USERNAME for your github username):
 
-```
-git clone git@github.com:YOUR_USERNAME/PullRequestCertification.git
-```
+`git clone git@github.com:YOUR_USERNAME/PullRequestCertification.git`{{execute}}
 
 Then change into that directory:
 
@@ -26,9 +24,7 @@ Now create a branch of your name and check it out in a single step:
 
 Echo your name into the certified.md file:
 
-```
-echo YOUR_NAME >> certified.md
-```
+`echo YOUR_NAME >> certified.md`{{execute}}
 
 Then let's show that certified.md file has changed:
 
@@ -40,14 +36,10 @@ Then let's show the diffs:
 
 Now commit your changes:
 
-```
-git commit -am 'Adding YOUR_NAME to certified.md'
-```
+`git commit -am 'Adding YOUR_NAME to certified.md'`{{execute}}
 
 And push your new branch back to your fork of the repo:
 
-```
-git push -u origin YOUR_NAME
-```
+`git push -u origin YOUR_NAME`{{execute}}
 
 Click the continue button to proceed.
