@@ -60,6 +60,30 @@ identify yourself, so let's do that.
 
 `git log`{{execute}}
 
+`git branch`{{execute}}
+
+`git checkout -b my_new_branch`{{execute}}
+
+`echo 'second test file but add to the first line'> test2`{{execute}}
+
+`git status`{{execute}}
+
+`git diff`{{execute}}
+
+`git commit -am 'third test'`{{execute}}
+
+`git log`{{execute}}
+
+`git checkout master`{{execute}}
+
+`git log`{{execute}}
+
+`git diff my_new_branch`{{execute}}
+
+`git merge my_new_branch`{{execute}}
+
+`git log`{{execute}}
+
 ##### WTF just happened?!?!
 
 After typing all the commands above click continue to go to an
