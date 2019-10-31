@@ -1,4 +1,4 @@
-Now back on your fork of the repo. 
+Now back on the github page for your fork of the repo.
 
 You will see a section labeled `Your recently pushed branches.`
 
