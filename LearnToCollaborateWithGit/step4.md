@@ -17,6 +17,9 @@ Copy the output part:
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFaYovE8UnKrOWPvaWMCwgkBp/Vee885DfjpzD41Spgl root@host01
 ```
 
+Now let's add this key to your github profile so that gihub will allow
+this key to make changes to repos owned by you.
+
 1. In the upper-right corner of any github.com page, click your profile photo, then
 click Settings.
 1. In the user settings sidebar, click SSH and GPG keys.
