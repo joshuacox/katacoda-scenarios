@@ -2,7 +2,8 @@ Now back on your fork of the repo.
 
 You will see a section labeled `Your recently pushed branches.`
 
-See a screenshot here.
+See a screenshot
+[here.](https://github.com/GitCertifiedCollaborator/PullRequestCertification/blob/master/screenshot.jpg)
 
 On the right side of this section will be a button labeled
 `Compare & pull request`. Click this button. You will be taken to a
