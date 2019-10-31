@@ -1,6 +1,6 @@
 Next we will follow the official docs on [adding a new ssh key to your github account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account).
 
-Now we will use the `cat` utility to display our public key.
+We will use the `cat` utility to display our public key:
 
 `cat ~/.ssh/id_ed25519.pub`{{execute}}
 
