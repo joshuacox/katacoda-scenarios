@@ -6,7 +6,7 @@ you should see either `Clone with SSH` or `Clone with HTTPS`, if the
 latter click the `Use SSH` link to the right.
 
 Now click the `copy button` or select the link that looks like
-`git@github.com:GitCertifiedCollaborator/PullRequestCertification.git`
+`git@github.com:YOUR_USERNAME/PullRequestCertification.git`
 and copy it directly.
 
 Now back in the terminal on the right clone that repo like this
