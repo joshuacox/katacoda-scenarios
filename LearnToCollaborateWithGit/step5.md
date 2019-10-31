@@ -39,9 +39,9 @@ Now commit your changes:
 
 `git commit -S -s -am 'Adding YOUR_NAME to certified.md'`{{execute}}
 
-Note: we are using the `-s` option which will append a `sign-off` message to your commit message, and the `-S` option which will tell git to use the gpg key we configured in step4 to sign the commit.
+  Note: we are using the `-s` option which will append a `sign-off` message to your commit message, and the `-S` option which will tell git to use the gpg key we configured in step4 to sign the commit.  The `-S` option will fail if you did not complete the gpg steps in step 4!  I have added these options to this tutorial as many open source projects will require these options.  The reasons behind both are beyond this tutorial.  But I would point you to [here](https://stackoverflow.com/questions/1962094/what-is-the-sign-off-feature-in-git-for) about signing off, and [here](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work) about signing your work and what that means.
 
-And push your new branch back to your fork of the repo:
+Finally we will push your new branch back to your fork of the repo:
 
 `git push -u origin YOUR_NAME`{{execute}}
 
