@@ -24,7 +24,7 @@ this key to make changes to repos owned by you.
 click Settings.
 1. In the user settings sidebar, click SSH and GPG keys.
 1. Click New SSH key or Add SSH key.
-1. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
+1. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal laptop, you might call this key "Personal laptop".
 1. Paste your key into the "Key" field.
 1. If prompted, confirm your GitHub password.
 
