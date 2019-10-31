@@ -1,7 +1,7 @@
 # Finish
 
-Thanks for learning to make a pull request! If everybody involved in a
-group could do this simple task the world would be a better place.
+Thanks for learning how to make a pull request! If everybody involved in a
+group could do this simple task the world would be a more collaborative place.
 
 If you think this tutorial could be improved I ask that you use your
 newfound skills and fork this
