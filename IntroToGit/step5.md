@@ -106,4 +106,48 @@ sub-directories to git source code management tracking system.
 
 ^ Show us a log of the history of this git repo.
 
+`git checkout -b my_new_branch`{{execute}}
+
+^ This creates a new branch and checks that new branch out in a single command.
+
+`echo 'second test file but add to the first line'> test2`{{execute}}
+
+^ This overwrites that second file with a new first line.
+
+`git status`{{execute}}
+
+^ This should show us that the second file has changed.
+
+`git diff`{{execute}}
+
+^ This should show us the differences in the second file that has changed.
+
+`git commit -am 'third test'`{{execute}}
+
+^ This will commit the differences in the second file that has changed.
+
+`git log`{{execute}}
+
+^ This will now show the commit where we committed the differences in the second file that has changed.
+
+`git checkout master`{{execute}}
+
+^ This will now checkout the master branch.
+
+`git log`{{execute}}
+
+^ This will not show the most recent commit we made because that was in the other branch `my_new_branch` because are back on the master branch.
+
+`git diff my_new_branch`{{execute}}
+
+^ This will show the difference between the master branch and the `my_new_branch` branch.
+
+`git merge my_new_branch`{{execute}}
+
+^ This will merge the differences between the master branch and the `my_new_branch` branch.
+
+`git log`{{execute}}
+
+^ This will now show the most recent commit we just made because we just merged the other branch `my_new_branch` into the master branch.
+
 Click the continue button to continue.
