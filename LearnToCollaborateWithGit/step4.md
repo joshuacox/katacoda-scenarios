@@ -29,6 +29,6 @@ click Settings.
 1. Paste your key into the "Key" field.
 1. If prompted, confirm your GitHub password.
 
-Again if any of the steps above are unclear go to the official github docs about [adding a new ssh key to your github account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account).
+Again, if any of the steps above are unclear go to the official github docs about [adding a new ssh key to your github account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account).
 
 Click continue to proceed.
