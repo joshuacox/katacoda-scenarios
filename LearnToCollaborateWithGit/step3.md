@@ -2,7 +2,7 @@ Before we clone your fork of this repo, let's setup your account for SSH
 access.
 
 We are going to create some encryption keys that will identify
-you to git and allow you upload changes without typing your password.
+you to git and allow you to upload changes without typing your password.
 
 This is much more secure and should be considered a best practice.
 

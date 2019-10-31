@@ -5,12 +5,22 @@ You will see a section labeled `Your recently pushed branches.`
 See a screenshot
 [here.](https://github.com/GitCertifiedCollaborator/PullRequestCertification/blob/master/screenshot.jpg)
 
-On the right side of this section will be a button labeled
-`Compare & pull request`. Click this button. You will be taken to a
-`Open a pull request` page. Here you will fill out a title field and a
-description for your pull request.  You should give it a title that will
-immediately identify what this pull request is about.  In this case,
-something like `Adding YOUR_NAME to the certified.md` is appropriate.
+On the right side of this section will be a button labeled:
+
+`Compare & pull request`
+
+Click this button. You will be taken to a page labled:
+
+`Open a pull request`
+
+Here you will fill out a title field and a
+description for your pull request.
+
+You should give it a title that will
+immediately identify what this pull request is about.
+
+In this case, something like `Adding YOUR_NAME to the certified.md` is appropriate.
+
 Then give a more verbose description in the `Leave a comment` field.
 
 Finally click the `Create pull request` button.
