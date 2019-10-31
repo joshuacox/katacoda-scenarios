@@ -30,4 +30,13 @@ click Settings.
 
 Again, if any of the steps above are unclear go to the official github docs about [adding a new ssh key to your github account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account).
 
+Now if you don't already have a GPG key let's follow the official github docs.
+
+1. [Generate a new GPG key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key)
+1. [Add the gpg key to your github account](https://help.github.com/en/articles/adding-a-new-gpg-key-to-your-github-account)
+1. [Tell git about your signing key](https://help.github.com/en/articles/telling-git-about-your-signing-key)
+1. [Associate an email with your signing key](https://help.github.com/en/github/authenticating-to-github/associating-an-email-with-your-gpg-key)
+
+You should note that some of these steps are very similar to the SSH keys steps.
+
 Click continue to proceed.

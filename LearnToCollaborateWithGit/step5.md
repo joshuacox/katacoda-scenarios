@@ -36,7 +36,7 @@ Then let's show the diffs:
 
 Now commit your changes:
 
-`git commit -am 'Adding YOUR_NAME to certified.md'`{{execute}}
+`git commit -S -s -am 'Adding YOUR_NAME to certified.md'`{{execute}}
 
 And push your new branch back to your fork of the repo:
 
