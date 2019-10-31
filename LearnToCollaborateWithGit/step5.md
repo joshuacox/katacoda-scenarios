@@ -10,7 +10,8 @@ Now click the `copy button` or select the link that looks like
 and copy it directly.
 
 Now back in the terminal on the right clone that repo like this
-(changing YOUR_USERNAME for your github username):
+(changing YOUR_USERNAME for your github username, or perhaps just typing
+'git clone ' and pasting the link from above).
 
 `git clone git@github.com:YOUR_USERNAME/PullRequestCertification.git`{{execute}}
 
