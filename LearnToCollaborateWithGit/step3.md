@@ -1,9 +1,15 @@
 Before we clone your fork of this repo, let's setup your account for SSH
-access.  We are going to create some encryption keys that will identify
+access.
+
+We are going to create some encryption keys that will identify
 you to git and allow you upload changes without typing your password.
-This is much more secure and should be considered a best practice.  You
-can follow all of these steps on your local computer too, or use the VM
-we have spun up on katacoda.  However, remember to delete the keys from
+
+This is much more secure and should be considered a best practice.
+
+You can follow all of these steps on your local computer,
+or use the terminal from the VM we have spun up on katacoda.
+
+However, remember to delete the keys from
 this VM off of your github account when we finish (that will be the last
 step of this tutorial).
 
