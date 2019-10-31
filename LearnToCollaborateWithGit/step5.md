@@ -38,6 +38,8 @@ Now commit your changes:
 
 `git commit -S -s -am 'Adding YOUR_NAME to certified.md'`{{execute}}
 
+Note: we are using the `-s` option which will append a `sign-off` message to your commit message, and the `-S` option which will tell git to use the gpg key we configured in step4 to sign the commit.
+
 And push your new branch back to your fork of the repo:
 
 `git push -u origin YOUR_NAME`{{execute}}
