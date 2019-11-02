@@ -31,7 +31,10 @@ Echo your name into the certified.md file:
 
 Important Note: notice the use of `>>` and NOT `>`.  This appends to the
 file instead of overwriting it! If you overwrite the file instead of
-appending then your pull request will be denied!
+appending then your pull request will be denied!  Also, if you don't
+understand why the line is prepended with a `1. ` then you might look at
+documentation for markdown such as
+[this page.](https://commonmark.org/help/)
 
 Then let's show that certified.md file has changed:
 
