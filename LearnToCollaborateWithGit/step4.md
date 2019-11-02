@@ -30,7 +30,14 @@ click Settings.
 
 Again, if any of the steps above are unclear go to the official github docs about [adding a new ssh key to your github account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account).
 
-Now if you don't already have a GPG key let's follow the official github docs.
+Now if you don't already have a GPG key let's generate one:
+
+`gpg --default-new-key-algo rsa4096 --gen-key`{{execute}}
+
+Now follow the official github docs, you can skip the `gen-key` step as
+we just did that (note: the ubuntu here uses a 1.4 version of gpg which
+does not have the --full-generate-key option, hence why we used the the
+options above).
 
 1. [Generate a new GPG key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key)
 1. [Add the gpg key to your github account](https://help.github.com/en/articles/adding-a-new-gpg-key-to-your-github-account)
