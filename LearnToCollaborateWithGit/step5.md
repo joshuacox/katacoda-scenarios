@@ -25,7 +25,7 @@ Now create a branch of your name and check it out in a single step:
 
 Echo your name into the certified.md file:
 
-`echo YOUR_NAME >> certified.md`{{execute}}
+`echo '1. YOUR_NAME' >> certified.md`{{execute}}
 
 Important Note: notice the use of `>>` and NOT `>`.  This appends to the
 file instead of overwriting it! If you overwrite the file instead of
@@ -40,7 +40,7 @@ Then let's show the diffs:
 `git diff`{{execute}}
 
 If you messed and overwrote the file instead of appending this will be
-very evident at this point, as it will you show that you are removing everyone
+very evident at this point, as the diff will show you that you are removing everyone
 elses name!
 
 Now commit your changes:
