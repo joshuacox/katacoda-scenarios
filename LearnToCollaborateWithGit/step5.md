@@ -11,7 +11,9 @@ and copy it directly.
 
 Now back in the terminal on the right clone that repo like this
 (changing YOUR_USERNAME for your github username, or perhaps just typing
-'git clone ' and pasting the link from above).
+'git clone ' and pasting the link from above).  NOTE: this fails on
+katacoda at the moment as port 22 appears to be filtered from the VMs
+perspective.
 
 `git clone git@github.com:YOUR_USERNAME/PullRequestCertification.git`{{execute}}
 
