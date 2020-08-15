@@ -8,6 +8,6 @@ First install gatsby-cli
 
 `npm i -g gatsby-cli`{{execute}}
 
-`wget https://gist.github.com/joshuacox/05559ca673a9b8841594f0936195850d/raw/982278c2cedfa6420db66fa8343dd474917bf663/typography-borked.sh`{{execute}}
+`wget https://gist.github.com/joshuacox/05559ca673a9b8841594f0936195850d/raw/6967263beb5f1e28f7891f351d283adbe31164de/typography-borked.sh`{{execute}}
 
 `bash typography-borked.sh`{{execute}}
