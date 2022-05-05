@@ -1,0 +1,24 @@
+{
+    "noindex": true,
+    "title": "Visualise Environment Tab",
+    "description": "Learn how to add the Visualise Tab",
+    "details": {
+        "steps": [
+            {
+                "title": "",
+                "text": "step1.md"
+            }
+        ]
+    },
+    "files": [],
+    "environment": {
+        "hideintro": true, "hidefinish": true,
+        
+        "showvisualise": true,
+        
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu"
+    }
+}
